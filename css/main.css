@@ -1,0 +1,160 @@
+/* =========================================
+  Base styles
+============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(175, 219, 175); /* in case image is not found */
+  background-image: url("../img/garden.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.col {
+  text-align: center;
+  padding-top: 1em;
+}
+
+/* =========================================
+  Images
+============================================ */
+
+.circle { /* round images on home page. Floated in each class ="col" */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.cert { 
+  display: block;
+  border: solid 1px black;
+  margin: 0 auto 20px;
+  width: 10em;
+}
+
+/* =========================================
+  Main header
+============================================ */
+
+.main-header {
+  background-color: aquamarine;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+.name, .couns {
+  margin: 0;
+  font-size: 1.75em;
+  font-weight: 800;
+}
+
+.strap {
+  display: none;
+}
+
+/* =========================================
+  Main footer
+============================================ */
+
+.main-footer {
+  padding: 0.5em 1em 2em 1em;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+/* =========================================
+  Navigation
+============================================ */
+
+nav li, .main-footer li {
+  background: #fff;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/* =========================================
+  Media queries
+============================================ */
+
+@media (min-width: 725px) {
+
+  /* ============ Base styles */
+
+  .container {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .wrap {
+    min-height: calc(100vh - 65.81px); /*viewport height - footer height. Find this in dev tools */
+  }
+
+  /* ============ Header */
+
+  .name, .couns {
+    display: inline-block;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.15em;
+  }
+
+  .strap {
+    display: block;
+    font-size: 1em;
+    margin-top: 0.3em;
+  }
+
+  /* ============ Navigation */
+
+  nav li, .main-footer li {
+    display: inline-block;
+    margin-right: 0.25em;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+  }
+
+    /* ============ Columns */
+
+  .col {
+    float: left;
+    padding: 2em 0.5em 0 0.5em;
+    width: 33.3%;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* ============ Footer */
+
+  .main-footer {
+    padding: 0.5em 1em 1em 1em;
+  }
+
+}
