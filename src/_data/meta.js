@@ -1,8 +1,6 @@
 module.exports = {
   url: process.env.URL || "http://localhost:8080",
   siteName: "N White Counselling",
-  siteDescription:
-    "Quickly launch an 11ty-generated static site. Includes a minimal Sass framework, and generated sitemap, RSS feed, and social share preview images.",
-  authorName: "Stephanie Eckles",
+  siteDescription: "years experience with individuals",
   twitterUsername: "5t3ph" // no `@`
 };
