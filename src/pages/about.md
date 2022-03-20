@@ -100,7 +100,7 @@ Creating an `img` directory and keeping the pass-through directive will make ima
 
 ## Linting
 
-For Sass, [stylelint](https://stylelint.io/) is included. If you want to keep it, you may want to do a find/replace for `tdbc` to the prefix of your choice. If not, you'll want to remove the related files at the project root as well as the related items in the `package.json`.
+For Sass, [stylelint](https://stylelint.io/) is included. If you want to keep it, you may want to do a find/replace for `my` to the prefix of your choice. If not, you'll want to remove the related files at the project root as well as the related items in the `package.json`.
 
 A `prettier` config is included, with the only update being `printWidth: 100`.
 
@@ -111,13 +111,13 @@ Review the [styling documentation](https://5t3ph.github.io/html-sass-jumpstart/)
 The only notable differences are:
 
 1. `sitenav` - adjust the styles for the navigation header that appears on pages
-1. `tdbc-anchor` - styles for the `#` anchor that appears next to page headings ([or turn that feature off](#anchor-links)) can be adjusted in `sass/_utilities`
+1. `my-anchor` - styles for the `#` anchor that appears next to page headings ([or turn that feature off](#anchor-links)) can be adjusted in `sass/_utilities`
 1. Additional `article`-scoped styling for typography as it appears on `pages`
 1. A theme for the [`prism` syntax highlighting](#prism-syntax-highlighting) for code blocks. You can adjust or replace the theme in `sass/_prism`.
 
 ### Fonts
 
-The default font is [Baloo 2](https://fonts.google.com/specimen/Baloo+2) and is locally hosted with files in `fonts/`. If you swap to a different font, be sure to remove the font files as well as the `@font-face` rules at the top of `sass/_fonts.scss`, and update the `$tdbc-font-family` Sass variable.
+The default font is [Baloo 2](https://fonts.google.com/specimen/Baloo+2) and is locally hosted with files in `fonts/`. If you swap to a different font, be sure to remove the font files as well as the `@font-face` rules at the top of `sass/_fonts.scss`, and update the `$my-font-family` Sass variable.
 
 ## Anchor Links
 

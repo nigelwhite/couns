@@ -1,11 +1,11 @@
 {% set currentUrl = page.url %}
 
-<nav aria-labelledby="tdbc-siteid" class="tdbc-sitenav">
-  <div class="tdbc-sitenav__container">
-    <a id="tdbc-siteid" href="/"
+<nav aria-labelledby="my-siteid" class="my-sitenav">
+  <div class="my-sitenav__container">
+    <a id="my-siteid" href="/"
     {% if currentUrl === '/' %}aria-current="page"{% endif %}
     >{{ meta.siteName }}</a>
-    <ul role="list" class="tdbc-sitenav__navlist tdbc-list-unstyled">
+    <ul role="list" class="my-sitenav__navlist my-list-unstyled">
       {% for link in collections.pages %}
       <li>
         <a

@@ -1,51 +1,51 @@
-$tdbc-color-primary: #171392 !default;
-$tdbc-color-secondary: #db0a76 !default;
-// $tdbc-color-background: #f9f9f9 !default;
-$tdbc-color-background: #c7afaf !default;
+$my-color-primary: #171392 !default;
+$my-color-secondary: #db0a76 !default;
+// $my-color-background: #f9f9f9 !default;
+$my-color-background: #c7afaf !default;
 
-$tdbc-brand-colors: (
-  "primary": $tdbc-color-primary,
-  "secondary": $tdbc-color-secondary
+$my-brand-colors: (
+  "primary": $my-color-primary,
+  "secondary": $my-color-secondary
 ) !default;
 
-$tdbc-color-body: scale-color($tdbc-color-primary, $lightness: -30%, $saturation: -50%) !default;
-$tdbc-color-gray: mix(#767676, $tdbc-color-body, 70%) !default;
+$my-color-body: scale-color($my-color-primary, $lightness: -30%, $saturation: -50%) !default;
+$my-color-gray: mix(#767676, $my-color-body, 70%) !default;
 
-$tdbc-colors: map-merge(
-  $tdbc-brand-colors,
+$my-colors: map-merge(
+  $my-brand-colors,
   (
-    "text": $tdbc-color-body,
-    "background": $tdbc-color-background,
+    "text": $my-color-body,
+    "background": $my-color-background,
     "light": #fff,
     "dark": rgba(0 0 0 / 87%),
-    "gray": $tdbc-color-gray
+    "gray": $my-color-gray
   )
 );
 
-@function tdbc-color($key) {
-  @return map-get($tdbc-colors, $key);
+@function my-color($key) {
+  @return map-get($my-colors, $key);
 }
 
 // Add/remove to selectively generate `ink` (text color) classes
-$tdbc-ink-colors: "primary", "secondary", "text", "gray", "light", "dark" !default;
+$my-ink-colors: "primary", "secondary", "text", "gray", "light", "dark" !default;
 
 // Add/remove to selectively generate `background` (text color) classes
-$tdbc-background-colors: "primary", "secondary", "background", "gray", "light" !default;
+$my-background-colors: "primary", "secondary", "background", "gray", "light" !default;
 
-$tdbc-button-variants: "primary", "secondary", "light", "gray" !default;
-$tdbc-link-color: tdbc-color("primary") !default;
-$tdbc-border-radius: 8px !default;
+$my-button-variants: "primary", "secondary", "light", "gray" !default;
+$my-link-color: my-color("primary") !default;
+$my-border-radius: 8px !default;
 
-$tdbc-font-family: "Baloo 2", sans-serif !default;
-$tdbc-strong-font-weight: 500 !default;
-$tdbc-h1-font-size: 4.2rem !default;
-$tdbc-h2-font-size: 3.15rem !default;
-$tdbc-h3-font-size: 2rem !default;
-$tdbc-h4-font-size: 1.35rem !default;
-$tdbc-text-font-size: 1.15rem !default;
-$tdbc-lead-font-size: 1.35rem !default;
+$my-font-family: "Baloo 2", sans-serif !default;
+$my-strong-font-weight: 500 !default;
+$my-h1-font-size: 4.2rem !default;
+$my-h2-font-size: 3.15rem !default;
+$my-h3-font-size: 2rem !default;
+$my-h4-font-size: 1.35rem !default;
+$my-text-font-size: 1.15rem !default;
+$my-lead-font-size: 1.35rem !default;
 
-$tdbc-spacing: (
+$my-spacing: (
   sm: 1rem,
   md: 3rem,
   lg: 6rem,

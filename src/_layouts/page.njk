@@ -3,16 +3,16 @@ layout: base.njk
 ---
 {% include 'sitenav.njk' %}
 
-<header class="tdbc-hero">
-  <div class="tdbc-container">
-    <h1 class="tdbc-ink--primary tdbc-mb-none">{{ title }}</h1>
-    <h2 class="tdbc-lead tdbc-content-maxlength tdbc-ink--gray tdbc-mt-md tdbc-mx-auto">
+<header class="my-hero">
+  <div class="my-container">
+    <h1 class="my-ink--primary my-mb-none">{{ title }}</h1>
+    <h2 class="my-lead my-content-maxlength my-ink--gray my-mt-md my-mx-auto">
       {{ description }}
     </h2>
   </div>
 </header>
-<main class="tdbc-container">
-  <article class="tdbc-mx-auto">
+<main class="my-container">
+  <article class="my-mx-auto">
     {{ content | safe }}
   </article>
 </main>
